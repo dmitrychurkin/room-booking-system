@@ -1,0 +1,2 @@
+[default.databases]
+room-booking-system = { url = "postgres://postgres:admin@localhost:5433/room-booking-system" }

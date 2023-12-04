@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'room-booking-system'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=room-booking-system",
+                    "--package=room-booking-system"
+                ],
+                "filter": {
+                    "name": "room-booking-system",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'room-booking-system'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=room-booking-system",
+                    "--package=room-booking-system"
+                ],
+                "filter": {
+                    "name": "room-booking-system",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
