@@ -1,10 +1,8 @@
 use rocket::*;
 
-mod app;
-mod business;
-mod infrastructure;
+use room_booking_system::init;
 
 #[launch]
 fn rocket() -> Rocket<Build> {
-    app::init()
+    init()
 }
